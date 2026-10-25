@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Krismark Felerca — AI Thesis Portfolio</title>
+    <meta name="description"
+        content="Deep Learning-Based Early Warning System For Multi-Posture Piglet Crushing Events — Undergraduate Thesis by Carl Krismark Felerca">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍥</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">🍥 <span>CKF</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#overview" class="nav-link">Mission</a></li>
+                <li><a href="#journey" class="nav-link">Journey</a></li>
+                <li><a href="#methodology" class="nav-link">Jutsu</a></li>
+                <li><a href="#results" class="nav-link">Power Level</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="hero" class="section hero">
+        <canvas id="particles"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🎓 UNDERGRADUATE THESIS</div>
+            <h1 class="hero-title">Carl Krismark <span class="text-orange">Felerca</span></h1>
+            <h2 class="hero-subtitle">Deep Learning-Based Early Warning System<br>For Multi-Posture Piglet Crushing
+                Events</h2>
+            <p class="hero-tagline">"Protecting piglets through the power of AI — <span class="text-orange">that's my
+                    ninja way!</span>"</p>
+            <div class="hero-buttons">
+                <a href="#overview" class="btn btn-primary">⚔️ View Mission Briefing</a>
+                <a href="#results" class="btn btn-outline">📊 See Power Level</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="title-kanji">忍</span>
+                Shinobi Profile
+            </h2>
+            <div class="about-card fade-in">
+                <div class="about-left">
+                    <div class="about-photo">
+                        <div class="photo-placeholder">CKF</div>
+                        <div class="photo-ring"></div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <h3 class="about-name">Carl Krismark Felerca</h3>
+                    <p class="about-role">🔬 AI Researcher &amp; Deep Learning Developer</p>
+                    <p class="about-bio">
+                        A passionate undergraduate researcher specializing in computer vision
+                        and deep learning. Dedicated to solving real-world agricultural problems
+                        through innovative AI solutions. My thesis focuses on protecting newborn
+                        piglets by developing an intelligent early warning system that detects
+                        and predicts crushing events using instance segmentation.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-value counter" data-target="10109">0</span>
+                            <span class="stat-label">Images Trained</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">98.44<small>%</small></span>
+                            <span class="stat-label">mAP50 Accuracy</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">YOLOv11</span>
+                            <span class="stat-label">Model Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ THESIS OVERVIEW ═══════════════ -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="title-kanji">巻</span>
+                Mission Briefing
+            </h2>
+            <p class="section-desc fade-in">Understanding the mission objectives and the problem we set out to solve.
+            </p>
+            <div class="mission-grid">
+                <div class="mission-card fade-in">
+                    <div class="mission-icon">🎯</div>
+                    <h3>The Problem</h3>
+                    <p>
+                        Piglet crushing by sows is one of the leading causes of pre-weaning piglet
+                        mortality in commercial pig farming. This results in significant economic
+                        losses and raises serious animal welfare concerns. Traditional monitoring
+                        methods are labor-intensive and often fail to provide timely warnings.
+                    </p>
+                </div>
+                <div class="mission-card fade-in">
+                    <div class="mission-icon">💡</div>
+                    <h3>The Objective</h3>
+                    <p>
+                        Develop a deep learning-based early warning system using YOLOv11 instance
+                        segmentation that can detect and classify multiple piglet postures
+                        (lying, standing, piglet), enabling proactive intervention
+                        before crushing events occur.
+                    </p>
+                </div>
+                <div class="mission-card fade-in">
+                    <div class="mission-icon">🌟</div>
+                    <h3>The Significance</h3>
+                    <p>
+                        By achieving 98.44% mAP50 detection accuracy, this system can provide
+                        monitoring and alerts, reducing piglet mortality rates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ JOURNEY TIMELINE ═══════════════ -->
+    <section id="journey" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="title-kanji">道</span>
+                Mission Log
+            </h2>
+            <p class="section-desc fade-in">The journey from research to a fully deployed AI system.</p>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-phase">Phase 1</span>
+                        <h3>📋 Research &amp; Planning</h3>
+                        <p>Conducted extensive literature review on piglet crushing events, computer vision techniques,
+                            and YOLO architectures. Formulated the research problem and defined objectives.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-phase">Phase 2</span>
+                        <h3>📸 Data Collection</h3>
+                        <p>Gathered a comprehensive dataset of piglet and sow images in various postures — lying,
+                            standing, and
+                            general positions within pig pen.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-phase">Phase 3</span>
+                        <h3>🏷️ Data Annotation</h3>
+                        <p>Annotated images using Roboflow with 3 classes (lying, piglet, standing) in YOLOv11 format.
+                            Created polygon masks for instance segmentation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-phase">Phase 4</span>
+                        <h3>🔧 Pre-processing &amp; Augmentation</h3>
+                        <p>Applied grayscale conversion (CRT phosphor), auto-contrast stretching, and generated 5×
+                            augmented versions per image using flips and brightness adjustments. Final dataset: 10,109
+                            images.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-phase">Phase 5</span>
+                        <h3>🤖 Model Training</h3>
+                        <p>Trained YOLOv11n-seg for 142 epochs using the Ultralytics framework. Used batch size
+                            16, 640×640 image size, with pretrained weights.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-phase">Phase 6</span>
+                        <h3>📊 Evaluation &amp; Validation</h3>
+                        <p>Achieved outstanding results — 98.44% mAP50 for detection and 98.10% mAP50 for segmentation.
+                            Generated confusion matrices, PR curves, and F1 curves for thorough analysis.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-phase">Phase 7</span>
+                        <h3>✅ Thesis Accepted!</h3>
+                        <p>Successfully defended and passed the undergraduate thesis. The system demonstrated reliable
+                            real-time detection of multi-posture piglet crushing events.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ METHODOLOGY ═══════════════ -->
+    <section id="methodology" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="title-kanji">術</span>
+                Jutsu Breakdown
+            </h2>
+            <p class="section-desc fade-in">The technical details behind the AI system — models, data, and pipeline.</p>
+
+            <!-- Pipeline Flow -->
+            <div class="pipeline fade-in">
+                <h3 class="pipeline-title">🔄 AI Pipeline Flow</h3>
+                <div class="pipeline-flow">
+                    <div class="pipeline-step">
+                        <div class="step-icon">📷</div>
+                        <span>Raw Images</span>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-icon">🏷️</div>
+                        <span>Annotation</span>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-icon">🔧</div>
+                        <span>Pre-process</span>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-icon">🤖</div>
+                        <span>Training</span>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-icon">📊</div>
+                        <span>Evaluation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ RESULTS ═══════════════ -->
+    <section id="results" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="title-kanji">力</span>
+                Power Level
+            </h2>
+            <p class="section-desc fade-in">Final model performance — detection and segmentation metrics.</p>
+
+            <!-- Box Detection Metrics -->
+            <h3 class="results-subtitle fade-in">⚔️ Box Detection (Bounding Box)</h3>
+            <div class="metrics-grid fade-in">
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="98.57">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill" data-percent="98.57" />
+                        </svg>
+                        <span class="metric-value">98.57%</span>
+                    </div>
+                    <span class="metric-label">Precision</span>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="97.63">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill" data-percent="97.63" />
+                        </svg>
+                        <span class="metric-value">97.63%</span>
+                    </div>
+                    <span class="metric-label">Recall</span>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="98.44">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill" data-percent="98.44" />
+                        </svg>
+                        <span class="metric-value">98.44%</span>
+                    </div>
+                    <span class="metric-label">mAP50</span>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="92.61">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill" data-percent="92.61" />
+                        </svg>
+                        <span class="metric-value">92.61%</span>
+                    </div>
+                    <span class="metric-label">mAP50-95</span>
+                </div>
+            </div>
+
+            <!-- Mask Segmentation Metrics -->
+            <h3 class="results-subtitle fade-in">🎭 Mask Segmentation</h3>
+            <div class="metrics-grid fade-in">
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="98.66">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill mask" data-percent="98.66" />
+                        </svg>
+                        <span class="metric-value">98.66%</span>
+                    </div>
+                    <span class="metric-label">Precision</span>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="97.70">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill mask" data-percent="97.70" />
+                        </svg>
+                        <span class="metric-value">97.70%</span>
+                    </div>
+                    <span class="metric-label">Recall</span>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="98.10">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill mask" data-percent="98.10" />
+                        </svg>
+                        <span class="metric-value">98.10%</span>
+                    </div>
+                    <span class="metric-label">mAP50</span>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-ring" data-value="91.07">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" class="metric-bg" />
+                            <circle cx="60" cy="60" r="54" class="metric-fill mask" data-percent="91.07" />
+                        </svg>
+                        <span class="metric-value">91.07%</span>
+                    </div>
+                    <span class="metric-label">mAP50-95</span>
+                </div>
+            </div>
+
+            <!-- Training Visualizations -->
+            <h3 class="results-subtitle fade-in">📈 Training Visualizations</h3>
+            <div class="results-images fade-in">
+                <div class="result-img-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/confusion_matrix.png" alt="Confusion Matrix" loading="lazy">
+                    <span>Confusion Matrix</span>
+                </div>
+                <div class="result-img-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/confusion_matrix_normalized.png" alt="Normalized Confusion Matrix"
+                        loading="lazy">
+                    <span>Normalized Confusion Matrix</span>
+                </div>
+                <div class="result-img-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/BoxPR_curve.png" alt="Box PR Curve" loading="lazy">
+                    <span>Box PR Curve</span>
+                </div>
+                <div class="result-img-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/MaskPR_curve.png" alt="Mask PR Curve" loading="lazy">
+                    <span>Mask PR Curve</span>
+                </div>
+                <div class="result-img-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/BoxF1_curve.png" alt="Box F1 Curve" loading="lazy">
+                    <span>Box F1 Curve</span>
+                </div>
+                <div class="result-img-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/MaskF1_curve.png" alt="Mask F1 Curve" loading="lazy">
+                    <span>Mask F1 Curve</span>
+                </div>
+            </div>
+
+            <!-- Validation Predictions -->
+            <h3 class="results-subtitle fade-in">🔍 Validation: Ground Truth vs Predictions</h3>
+            <div class="comparison-grid fade-in">
+                <div class="comparison-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/val_batch0_labels.jpg" alt="Ground Truth Labels" loading="lazy">
+                    <span>Ground Truth Labels</span>
+                </div>
+                <div class="comparison-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/val_batch0_pred.jpg" alt="Model Predictions" loading="lazy">
+                    <span>Model Predictions</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ GALLERY ═══════════════ -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="title-kanji">証</span>
+                Proof of Battle
+            </h2>
+            <h3 class="results-subtitle fade-in">📷 Dataset Samples</h3>
+
+            <div class="gallery-grid fade-in">
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test0.jpg" alt="Test Result 0" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test1.jpg" alt="Test Result 1" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test2.jpg" alt="Test Result 2" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test3.jpg" alt="Test Result 3" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test4.jpg" alt="Test Result 4" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test5.jpg" alt="Test Result 5" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test6.jpg" alt="Test Result 6" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test7.jpg" alt="Test Result 7" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test8.jpg" alt="Test Result 8" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test9.jpg" alt="Test Result 9" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test10.jpg" alt="Test Result 10" loading="lazy">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/test-results/test11.jpg" alt="Test Result 11" loading="lazy">
+                </div>
+            </div>
+
+            <!-- Training Samples -->
+            <h3 class="results-subtitle fade-in" style="margin-top:3rem;">🎯 Training Samples</h3>
+            <div class="comparison-grid fade-in">
+                <div class="comparison-card" onclick="openLightbox(this)">
+                    <img src="assets/images/training/train_batch0.jpg" alt="Training Batch Sample" loading="lazy">
+                    <span>Training Batch Sample</span>
+                </div>
+            </div>
+
+            <!-- Detection Results -->
+            <h3 class="results-subtitle fade-in" style="margin-top:3rem;">🔍 Piglet Crushing Detection Results</h3>
+            <div class="detection-grid fade-in">
+                <div class="detection-card" onclick="openLightbox(this)">
+                    <img src="assets/images/result/Frame1.png" alt="Piglet Crushing - Frame 1" loading="lazy">
+                    <span>Piglet Crushing - Frame 1</span>
+                </div>
+                <div class="detection-card" onclick="openLightbox(this)">
+                    <img src="assets/images/result/Frame2.png" alt="Piglet Crushing - Frame 2" loading="lazy">
+                    <span>Piglet Crushing - Frame 2</span>
+                </div>
+                <div class="detection-card" onclick="openLightbox(this)">
+                    <img src="assets/images/result/Frame3.png" alt="Piglet Crushing - Frame 3" loading="lazy">
+                    <span>Piglet Crushing - Frame 3</span>
+                </div>
+                <div class="detection-card" onclick="openLightbox(this)">
+                    <img src="assets/images/result/Frame4.png" alt="Piglet Crushing - Frame 4" loading="lazy">
+                    <span>Piglet Crushing - Frame 4</span>
+                </div>
+                <div class="detection-card" onclick="openLightbox(this)">
+                    <img src="assets/images/result/Frame5.png" alt="Piglet Crushing - Frame 5" loading="lazy">
+                    <span>Piglet Crushing - Frame 5</span>
+                </div>
+                <div class="detection-card" onclick="openLightbox(this)">
+                    <img src="assets/images/result/Frame6.png" alt="Piglet Crushing - Frame 6" loading="lazy">
+                    <span>Piglet Crushing - Frame 6</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">
+                <span class="title-kanji">鷹</span>
+                Send a Messenger Hawk
+            </h2>
+            <p class="section-desc fade-in">Want to collaborate or learn more about this research? Get in touch!</p>
+            <div class="contact-content fade-in">
+                <a href="mailto:felercacarlkrismark@gmail.com" class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>felercacarlkrismark@gmail.com</p>
+                </a>
+                <a href="https://www.facebook.com/mackie.carl" target="_blank" rel="noopener noreferrer"
+                    class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Facebook Messenger</h3>
+                    <p>facebook.com/mackie.carl</p>
+                </a>
+                <a href="https://www.linkedin.com/in/carlfelerca" target="_blank" rel="noopener noreferrer"
+                    class="contact-card">
+                    <div class="contact-icon">🔗</div>
+                    <h3>LinkedIn</h3>
+                    <p>linkedin.com/in/carlfelerca</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">🍥</div>
+                <p class="footer-text">© 2026 Carl Krismark Felerca — Built with passion and the Will of Fire 🔥</p>
+                <p class="footer-sub">Deep Learning-Based Early Warning System For Multi-Posture Piglet Crushing Events
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════ LIGHTBOX ═══════════════ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="Full size image">
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
